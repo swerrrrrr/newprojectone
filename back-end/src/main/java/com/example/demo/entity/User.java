@@ -15,13 +15,13 @@ import java.util.Date;
 @Data
 public class User {
     @TableId(value = "plannedOrder_number")
-    private String plannedOrder_number;
-    private String Produce_name;
-    private Integer Produce_number;
-    private String Material_name;
-    private Integer Material_number;
-    private Integer Work_number;
-    private String Device_number;
-    private Date Planned_time;
+    private int plannedOrder_number;
+    private String produce_name;
+    private int produce_number;
+    private String material_name;
+    private int material_number;
+    private int work_number;
+    private String device_number;
+    private Date planned_time;
 
 }

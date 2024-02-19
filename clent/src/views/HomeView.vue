@@ -83,14 +83,14 @@
        
         <el-scrollbar> 
           <el-table :data="tableData">
-            <el-table-column prop="PlannedOrder_number" label="计划订单" width="150" /> 
-            <el-table-column prop="Product_name" label="产品名称" width="120" />
-            <el-table-column prop="Product_number" label="产品数量" width="80"/>
-            <el-table-column prop="Material_name" label="物料名称" width="80"/>
-            <el-table-column prop="Material_number" label="物料数量" width="80"/>
-            <el-table-column prop="Work_number " label="工作人数" width="80"/>
-            <el-table-column prop="Device_number" label="所需设备名称" width="120"/>
-            <el-table-column prop="Planned_time" label="计划完成时间" width="120"/>
+            <el-table-column prop="plannedOrder_number" label="计划订单" width="150" /> 
+            <el-table-column prop="product_name" label="产品名称" width="120" />
+            <el-table-column prop="product_number" label="产品数量" width="80"/>
+            <el-table-column prop="material_name" label="物料名称" width="80"/>
+            <el-table-column prop="material_number" label="物料数量" width="80"/>
+            <el-table-column prop="work_number " label="工作人数" width="80"/>
+            <el-table-column prop="device_number" label="所需设备名称" width="120"/>
+            <el-table-column prop="planned_time" label="计划完成时间" width="120"/>
             <el-table-column>
               <template #default="{ item }">
                 <el-button type="success">编辑<el-icon><EditPen /></el-icon></el-button>
@@ -117,25 +117,25 @@
             <el-input v-model="form.plannedOrder_number" style="width: 80%"/>
             </el-form-item>
             <el-form-item label="产品名称">
-            <el-input v-model="form.Product_name" style="width: 80%"/>
+            <el-input v-model="form.produce_name" style="width: 80%"/>
             </el-form-item>
             <el-form-item label="产品数量">
-            <el-input v-model="form.Product_number" style="width: 80%"/>
+            <el-input v-model="form.produce_number" style="width: 80%"/>
             </el-form-item>
             <el-form-item label="物料名称">
-            <el-input v-model="form.Material_name" style="width: 80%"/>
+            <el-input v-model="form.material_name" style="width: 80%"/>
             </el-form-item>
             <el-form-item label="物料数量">
-            <el-input v-model="form.Material_number" style="width: 80%"/>
+            <el-input v-model="form.material_number" style="width: 80%"/>
             </el-form-item>
             <el-form-item label="工作人数">
-            <el-input v-model="form.Work_number" style="width: 80%"/>
+            <el-input v-model="form.work_number" style="width: 80%"/>
             </el-form-item>
             <el-form-item label="所需设备名称">
-            <el-input v-model="form.Device_number" style="width: 80%"/>
+            <el-input v-model="form.device_number" style="width: 80%"/>
             </el-form-item>
             <el-form-item label="划完成时间">
-            <el-input v-model="form.Planned_time" style="width: 80%"/>
+            <el-input v-model="form.planned_time" style="width: 80%"/>
             </el-form-item>
           </el-form>
           <template #footer>
@@ -166,13 +166,13 @@ const logoTextShow =ref(true)
 const dialogVisible =ref(false)
 const form =ref({
   plannedOrder_number:"",
-  Product_name:"",
-  Product_number:"",
-  Material_name:"",
-  Material_number:"",
-  Work_number:"",
-  Device_number:"",
-  Planned_time:""
+  product_name:"",
+  product_number:"",
+  material_name:"",
+  material_number:"",
+  work_number:"",
+  device_number:"",
+  planned_time:""
 })
 const input1 = ref('')  
 const input2 = ref('')
