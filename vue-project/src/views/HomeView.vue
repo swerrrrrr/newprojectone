@@ -114,7 +114,7 @@
             v-model="dialogVisible" title="Tips" width="30%">
           <el-form :model="form" label-width="120px">
             <el-form-item label="计划订单">
-            <el-input v-model="form.PlannedOrder_number" style="width: 80%"/>
+            <el-input v-model="form.plannedOrder_number" style="width: 80%"/>
             </el-form-item>
             <el-form-item label="产品名称">
             <el-input v-model="form.Product_name" style="width: 80%"/>
@@ -165,7 +165,7 @@ const sideWith =ref(200)
 const logoTextShow =ref(true)
 const dialogVisible =ref(false)
 const form =ref({
-  PlannedOrder_number:"",
+  plannedOrder_number:"",
   Product_name:"",
   Product_number:"",
   Material_name:"",

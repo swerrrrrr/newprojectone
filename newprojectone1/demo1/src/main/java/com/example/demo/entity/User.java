@@ -14,8 +14,8 @@ import java.util.Date;
 
 @Data
 public class User {
-    @TableId(value = "PlannedOrder_number")
-    private Integer PlannedOrder_number;
+    @TableId(value = "plannedOrder_number")
+    private String plannedOrder_number;
     private String Produce_name;
     private Integer Produce_number;
     private String Material_name;
